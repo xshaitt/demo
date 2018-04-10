@@ -3,7 +3,7 @@
     <target name="qqq">
         <copy file=".env.example" tofile=".env" overwrite="true"/>
         <!--更新composer-->
-        <phpunit pharlocation="./vendor/bin/phpunit" configuration="./phpunit.xml">
+        <phpunit pharlocation="./vendor/bin/phpunit">
         </phpunit>
     </target>
 </project>
