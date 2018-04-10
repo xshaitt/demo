@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="HelloWorld" basedir="." default="qqq">
-    <target name="qqq">
+<project name="HelloWorld" basedir="." default="phpunit">
+    <target name="phpunit">
         <copy file=".env.example" tofile=".env" overwrite="true"/>
         <!--更新composer-->
-        <phpunit pharlocation="./vendor/bin/phpunit">
+        <phpunit pharlocation="./vendor/bin/phpunit" configuration="./phpunit.xml">
         </phpunit>
     </target>
 </project>
