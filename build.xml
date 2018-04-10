@@ -2,6 +2,8 @@
 <project name="HelloWorld" basedir="." default="phpunit">
     <target name="phpunit">
         <copy file=".env.example" tofile=".env" overwrite="true"/>
+        <!--更新composer-->
+        <exec command="composer update"/>
         <phpunit pharlocation="./vendor/bin/phpunit">
         </phpunit>
     </target>
