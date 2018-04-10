@@ -3,7 +3,6 @@
     <target name="phpunit">
         <copy file=".env.example" tofile=".env" overwrite="true"/>
         <!--更新composer-->
-        <exec command="composer update"/>
         <phpunit pharlocation="vendor/bin/phpunit" configuration="phpunit.xml">
         </phpunit>
     </target>
