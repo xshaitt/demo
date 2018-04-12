@@ -67,7 +67,7 @@ class ExampleTest extends TestCase
         $this->assertTrue(true);
     }
 
-    public function testBasicTest10()
+    public function testBasicTest11()
     {
         $this->assertTrue(true);
     }
